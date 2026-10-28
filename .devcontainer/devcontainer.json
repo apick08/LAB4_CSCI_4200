@@ -1,0 +1,17 @@
+{
+  "name": "CSAPP Linux Environment",
+  "image": "mcr.microsoft.com/devcontainers/cpp:1-ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:1": {
+      "configureZshAsDefaultShell": true
+    }
+  },
+  "onCreateCommand": "sudo apt-get update && sudo apt-get install -y build-essential gdb",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
+    }
+  }
+}
